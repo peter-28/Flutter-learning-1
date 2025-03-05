@@ -670,13 +670,13 @@ class SettingsScreen extends StatelessWidget {
           TextButton(
             onPressed: () {
               // Logika logout
-              Navigator.pushReplacementNamed(context, '/');
-              // Navigator.pushNamedAndRemoveUntil(
-              //   context,
-              //   '/',
-              //   (route) => false, // Hapus semua halaman sebelumnya
-              // );
-              Navigator.of(context).pop();
+              // Navigator.pushReplacementNamed(context, '/');
+              Navigator.pushNamedAndRemoveUntil(
+                context,
+                '/',
+                (route) => false, // Hapus semua halaman sebelumnya
+              );
+              // Navigator.of(context).pop();
             },
             child: Text(
               "Keluar",
