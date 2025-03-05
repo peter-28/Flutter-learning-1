@@ -74,7 +74,7 @@ class _FormScreenState extends State<FormScreen> {
                       return "Enter Password";
                     }
                     if (value.length < 6) {
-                      return "Password should be at least 8 characters long";
+                      return "Password should be at least 6 characters long";
                     }
                     if (!value.contains(RegExp(r'[A-Z]'))) {
                       return "Password must contain at least one uppercase letter";
