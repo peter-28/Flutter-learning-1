@@ -1,8 +1,9 @@
 
+import 'package:app_flutter/pages/auth/login.dart';
+import 'package:app_flutter/pages/auth/register.dart';
 import 'package:app_flutter/pages/home/home.dart';
+import 'package:app_flutter/pages/settings/setting.dart';
 import 'package:flutter/material.dart';
-import 'package:app_flutter/form_screen.dart';
-import 'package:app_flutter/pages/signin.dart';
 import 'package:url_strategy/url_strategy.dart';
 
 void main() {
@@ -22,9 +23,10 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       routes: {
-        '/': (context) => FormScreen(),
-        '/sign-in': (context) => SigninPage(),
+        '/': (context) => LoginPage(),
+        '/register': (context) => RegisterPage(),
         '/home': (context) => HomePage(),
+        '/setting': (context) => SettingsPage(),
       },
     );
   }
